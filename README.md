@@ -1,7 +1,8 @@
 To deploy from the directory:
 
 ```
-yarn
+npm install
+npm run build
 netlify build
 netlify deploy
 ```
@@ -11,4 +12,4 @@ Netlify CI will build it.
 
 To see hello world:
 
-Go to https://deployment-url.example.com/.netlify/functions/hello-world
+Go to https://netlify-typescript-hello-world.netlify.com/.netlify/functions/hello-world
