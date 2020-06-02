@@ -12,4 +12,4 @@ Netlify CI will build it.
 
 To see hello world:
 
-Go to https://netlify-typescript-hello-world.netlify.com/.netlify/functions/hello-world
+Go to https://funcguide-hello-world.netlify.app/.netlify/functions/hello-world
