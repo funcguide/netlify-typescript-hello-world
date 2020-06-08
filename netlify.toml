@@ -7,3 +7,4 @@
   from = "/hello/:name"
   to = "/.netlify/functions/hello-world?name=:name"
   status = 200
+  query = { name = ":name" }
