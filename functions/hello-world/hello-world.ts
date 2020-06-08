@@ -9,7 +9,13 @@ export async function handler(
   event: APIGatewayProxyEvent,
   context: Context
 ): Promise<APIGatewayProxyResult> {
-  const subject = event.queryStringParameters.name || "World";
+  const nameFromPath = decodeURIComponent(
+    (event.path || "")
+      .split("/")
+      .filter((s) => s.length > 0)
+      .pop() || ""
+  );
+  const subject = event.queryStringParameters.name || nameFromPath || "World";
   return {
     statusCode: 200,
     body: JSON.stringify({ message: `Hello ${subject}` }),
