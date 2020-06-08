@@ -5,6 +5,10 @@
 
 [[redirects]]
   from = "/hello/:name"
-  to = "/.netlify/functions/hello-world?name=:name"
+  to = "/.netlify/functions/hello-world/:name"
   status = 200
-  query = { name = ":name" }
+
+[[redirects]]
+  from = "/hello"
+  to = "/.netlify/functions/hello-world"
+  status = 200
